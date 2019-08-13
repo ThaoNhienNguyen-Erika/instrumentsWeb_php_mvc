@@ -10,8 +10,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	
-	<link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
+	<!-- <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" /> -->
 </head>
 <body>
 	<header>
@@ -79,14 +80,35 @@
 				<div class="row">
 					<div class="sidebar col-lg-4">
 						<p>Loại sản phẩm</p>
-						<a href="#saxophone"><img src="image/saxophone.png" title="invert" class="invert" style="width:50px;">Saxophone<img src="image/expand_more_grey.png" title="inverts" class="more" style="width:40px;"></a>
-						<a href="#alto">Alto Saxophone</a>
-						<a href="#tenor">Tenor Saxophone</a>
-						<a href="#soprano">Soprano Saxophone</a>
-						<a href="#guitar"><img src="image/guitar.png" title="invert" class="invert" style="width:50px;">Guitar<img src="image/expand_more_grey.png" title="invert" class="more" style="width:40px;"></a>
-						<a href="#flute"><img src="image/flute.png" title="invert" class="invert" style="width:50px;">Sáo<img src="image/expand_more_grey.png" title="invert" class="more" style="width:40px;"></a>
-						<a href="#harmonica"><img src="image/harmonica.png" title="invert" class="invert" style="width:50px;">Harmonica<img src="image/expand_more_grey.png" title="invert" class="more" style="width:40px;"></a>
-						<a href="#violin"><img src="image/violin.png" title="invert" class="invert" style="width:50px;">Violin<img src="image/expand_more_grey.png" title="invert" class="more" style="width:40px;"></a>
+						<button class="dropdown-btn"><img src="image/saxophone.png" title="invert" class="invert" style="width:50px; margin-left: -70px;">Saxophone<i class="fas fa-chevron-down"></i></button>
+						<div class="dropdown-container">
+							<a href="#alto saxophone">Alto Saxophone</a>
+							<a href="#tenor">Tenor Saxophone</a>
+							<a href="#soprano">Soprano Saxophone</a>
+						</div>
+						<button class="dropdown-btn"><img src="image/guitar.png" title="invert" class="invert" style="width:50px; margin-left: -115px;">Guitar<i class="fas fa-chevron-down"></i></button>
+						<div class="dropdown-container">
+							<a href="#acoustic guitar">Acoustic Guitar</a>
+							<a href="#electric guitar">Electric Guitar</a>
+							<a href="#bass guitar">Bass Guitar</a>
+						</div>
+						<button class="dropdown-btn"><img src="image/flute.png" title="invert" class="invert" style="width:50px; margin-left: -120px;">Flute<i class="fas fa-chevron-down"></i></button>
+						<div class="dropdown-container">
+							<a href="#alto flute">Alto Flute</a>
+							<a href="#bass flute">Bass Flute</a>
+							<a href="#piccolo flute">Piccolo Flute</a>
+						</div>
+						<button class="dropdown-btn"><img src="image/harmonica.png" title="invert" class="invert" style="width:50px; margin-left: -60px;">Harmonica<i class="fas fa-chevron-down"></i></button>
+						<div class="dropdown-container">
+							<a href="#diatonic">Diatonic</a>
+							<a href="#chromatic">Chromatic</a>
+							<a href="#tremolo">Tremolo</a>
+						</div>
+						<button class="dropdown-btn"><img src="image/violin.png" title="invert" class="invert" style="width:50px; margin-left: -110px;">Violin<i class="fas fa-chevron-down"></i></button>
+						<div class="dropdown-container">
+							<a href="#acoustic violin">Acoustic Violin</a>
+							<a href="#electric violin">Electric Violin</a>
+						</div>
 					</div>
 					<div class="slides col-lg-8">
 						<img class=slides src="image/flute banner.jpg" height="600" width="800">
@@ -129,15 +151,15 @@
 				<div class="row">
 					<div class="col-lg-5">
 						<h3><b>Về chúng tôi</b></h3>
-						<p>Giới thiệu</p>
-						<p>Dịch vụ</p>
-						<p>Sản phẩm</p>
+						<a href=#gioithieu><p>Giới thiệu</p></a>
+						<a href=#sanpham><p>Sản phẩm</p></a>
+						<a href=#lienhe><p>Liên hệ</p></a>
 					</div>
-					<div class="col-lg-5" style="margin-left: -20px;">
+					<div class="col-lg-5" style="margin-left: -73px;">
 						<h3><b>Kết nối với chúng tôi</b></h3>
-						<p><img class="invert1" src="image/facebook-icon.png" height="30" width="30">&nbsp;facebook.com/inst</p>
-						<p><img class="inverts" src="image/twitter-icon.png" height="30" width="30">&nbsp;twitter.com/inst</p>
-						<p><img class="inverts" src="image/insta-icon.png" height="30" width="30">&nbsp;instagram.com/inst</p>
+						<a href=#face><p><img class="invert1" src="image/facebook-icon.png" height="30" width="30">&nbsp;facebook.com/inst</p></a>
+						<a href=#twitter><p><img class="inverts" src="image/twitter-icon.png" height="30" width="30">&nbsp;twitter.com/inst</p></a>
+						<a href=#insta><p><img class="inverts" src="image/insta-icon.png" height="30" width="30">&nbsp;instagram.com/inst</p></a>
 					</div>
 				</div>
 			</div>
@@ -154,7 +176,7 @@
 							<img class="inverts" src="image/twitter-icon.png" height="30" width="30" style="margin-top: 4px;">&nbsp;
 							<img class="inverts" src="image/insta-icon.png" height="30" width="30" style="margin-top: 4px;">&nbsp;
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4" style="padding-left: 70px;">
 						<img class="invert1" src="image/call icon.png" height="30" width="30" style="margin-top: -5px;">&nbsp;&nbsp;&nbsp;
 						<p style="font-size: 18px;">ĐIỆN THOẠI: +84964659722</p>
 					</div>
@@ -162,5 +184,22 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
 </body>
 </html>
