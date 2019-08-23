@@ -1,40 +1,57 @@
 <style>
-*{
-  margin: 0px;
-  padding: 0;
-  font-family: sans-serif;
+.fa{ 
+  width: 40px;
+  height: 40px; 
+  line-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  margin-right: 10px;
+  text-align: center;
 }
-
-.sidebar {
-    position: fixed;
-  width: 25%;
-  height: 100%;
-  background: #151719;
-}
-
-.sidebar ul li {
-  color: White;
-  list-style:none;
-  padding: 15px 10px;
-  border-bottom: 1px solid rgba(100,100,100,0.3);
-}
-
-</style>
-
-
-
-<div class="sidebar">
-<div class="container">
  
- <ul>
-  <li>Home</li>
-  <li>About</li>
-  <li>Contact</li>
-  </ul>
-</div>
-</div>
-<script>
-function toggleSidebar(){
-  document.getElementById("sidebar").classList.toggle('active');
-  }
-</script>
+.gradient-btn{ 
+    height: 70px;
+    line-height: 70px;
+    width: 180px;
+    margin: 10px;
+    padding-left: 20px;
+    border-radius: 50px;
+    float: left;
+    color: #FFF; 
+    box-shadow: 5px 5px 2px -2px #a5a5a5;
+}
+
+.btn-1{
+     background-image: linear-gradient(to right top, #fdbe25, #fec928, #ffd42b, #ffdf31, #ffea37); 
+}
+
+.btn-2{
+    background-image: linear-gradient(to right top, #fab823, #f9a315, #f68d0c, #f3770d, #ee5f13); 
+}
+ 
+.gradient-btn:nth-child(odd):hover{
+    transition: all 2s ease;
+    transform: translateX(10px);
+    cursor: pointer;
+    box-shadow: -6px -9px 2px -2px #a5a5a5;
+}
+ 
+.gradient-btn:nth-child(even):hover{
+    transition: all 2s ease;
+    transform: translateX(-10px);
+    cursor: pointer;
+    box-shadow: 8px 8px 2px -2px #a5a5a5;
+}
+  </style>
+
+
+  <h1>Gradient Buttons</h1>
+
+      <span class="gradient-btn btn-1">Ban</span>
+
+  
+     <span class="gradient-btn btn-2">Bug</span>
+  
+
+
+  
