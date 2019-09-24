@@ -106,99 +106,79 @@ ul.search li{
 	font-family: Roboto;
 	background: #d7d7d7;
 }
-.sidebar{
-	margin-top: 15px;
-}
-.sidebar p{
-	text-transform: uppercase;
-	font-size: 17px;
-	margin-left: 10px;
-    width: 280px;
-	padding: 5px 15px;
-	border-radius: 5px 5px 0 0;
-	background: #363636;
-	color: white;
-	margin-bottom: 0;
-}
-.sidebar a, .dropdown-btn{
-	margin-left: 10px;
-	width: 280px;
-	background: #555555;
-	padding: 20px 20px 6px 16px;
-	font-weight: bold;
-	font-size: 20px;
-	color: white;
-	display: block;
-	cursor: pointer;
-	border-bottom: 1px solid rgba(165, 162, 162, 0.3);
-	text-decoration: none;
-}
-.dropdown-btn{
-	border:none;
-	border-bottom: 1px solid rgba(165, 162, 162, 0.3);
-}
-.sidebar a{
-	padding-left: 60px;
-}
-.sidebar a:hover{
-	color:orange;
-}
-.sidebar img{
-	margin-left: -5px;
-	margin-top: -12px;
-}
-/*Filter styles*/
-.invert { filter: invert(100%); }
-
-.fa-chevron-down{
-	float:right;
-	margin-top: 8px;
-	margin-right: -15px; 
-}
-.dropdown-container {
-	display: none;
-	/* background-color: #262626; */
-	padding-left: -10px;
-}
-.active {
-	color: orange;
-  }
 /* slider */
 .slides{
-	margin-top: 15px;
+	margin-top: 25px;
 	float:right;
 }
 .newpro_main{
 	margin-top: 15px;
+	margin-bottom: 15px;
 }
 .newpro_main p{
+	position: relative;
 	text-transform: uppercase;
-	font-size: 17px;
-	margin-top: 5px;
-	margin-left: 10px;
-    width: 250px;
-	padding: 5px 15px;
-	border-radius: 5px 5px 0 0;
-	background: #363636;
-	color: white;
-	margin-bottom: 0;
-}
-.newpro{
-	margin-left: 25px;
-    width: 1131px;
-	padding: 5px 15px;
-	background: white;
-	margin-bottom: 0;
-}
-.newpro a{
-	margin-left: 10px;
-	padding: 5px 15px;
-	padding-right: 46px;
-	margin-bottom: 0;
 	font-size: 20px;
 	font-weight: bold;
+	margin-top: 5px;
+	margin-left: -15px;
+    width: 250px;
+	padding: 5px 15px;
+	margin-bottom: 0;
+}
+.newpro_main p:before{
+	content: '';
+	position: absolute;
+	border-bottom: 1px solid #ffae00;
+	width: 930px;
+	margin: 15px 160px;
+}
+.newpro a{
+	font-size: 15px;
 	color: black;
 }
+.item p{
+	color: orange;
+	margin-top: 10px;
+}
+.btn.btn-primary{
+	background: #d7d7d7;
+    text-transform: uppercase;
+    border: 1px black solid;
+    color: #333333;
+}
+.btn.btn-primary:hover{
+	background: orange;
+    color: #ffffff !important;
+    border: 1px orange solid;
+}
+.btn{
+	border-radius: 0;
+}
+/*Sản phẩm bán chạy */
+.best_main{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.best_main p{
+	position: relative;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-left: -15px;
+    width: 250px;
+	padding: 5px 15px;
+	margin-bottom: 0;
+}
+.best_main p:before{
+	content: '';
+	position: absolute;
+	border-bottom: 1px solid #ffae00;
+	width: 870px;
+    margin: 15px 222px;
+}
+
 a.text_new{
 	margin-top: 5px;
 	margin-left: 10px;
@@ -209,54 +189,13 @@ a.text_new{
 	font-weight: bold;
 	color: black;
 }
-/*Sản phẩm bán chạy */
-.best_main{
-	margin-top: 15px;
-}
-.best_main p{
-	text-transform: uppercase;
-	font-size: 17px;
-	margin-top: 5px;
-	margin-left: 10px;
-    width: 250px;
-	padding: 5px 15px;
-	border-radius: 5px 5px 0 0;
-	background: #363636;
-	color: white;
-	margin-bottom: 0;
-}
-.best{
-	margin-left: 25px;
-    width: 1131px;
-	padding: 5px 15px;
-	background: white;
-	margin-bottom: 0;
-}
-.best a{
-	margin-left: 10px;
-	padding: 5px 15px;
-	padding-right: 46px;
-	margin-bottom: 0;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-}
-a.text_best{
-	margin-top: 5px;
-	margin-left: 10px;
-	padding: 5px 15px;
-	padding-right: 160px;
-	margin-bottom: 0;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-}
+
 /*Footer*/
 .footer_main{
 	font-family: Roboto;
 	padding-top: 10px;
     padding-bottom: 10px;
-	background-image: url("footer.jpg") ; 
+	background-image: url("footer1.jpg") ; 
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -266,7 +205,7 @@ a.text_best{
 	display: inline-block;
 	margin: 5px 10px;
 	padding-right: 20px;
-	font-size:25px;
+	font-size:20px;
 }
 
 .footer_main h3:before{
@@ -274,13 +213,13 @@ a.text_best{
 	position: absolute;
 	border-bottom: 1px solid #ffae00;
 	width:92%;
-	margin: 35px 10px 0px 3px;
+	margin: 30px 10px 0px 3px;
 } 
 .footer_main p{
-	margin-left: 10px;
+	margin-left: 12px;
 	margin-top: 15px;
 	color: white;
-	font-size:20px;
+	font-size:15px;
 	padding-right:90px;
 }
 .footer_extra{

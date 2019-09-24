@@ -7,3 +7,6 @@
 .owl-nav{
     font-size: 30px;
 }
+.owl-carousel .owl-item img{
+    margin-bottom: 10px;
+}

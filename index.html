@@ -15,7 +15,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 
 	<!-- <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" /> -->
 </head>
@@ -24,13 +29,13 @@
 		<div class="topbar">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6" style="margin-left: -10px;">
 						<ul class="topbar-left">
 							<li style="margin-top: 10px;"><i class="fa fa-phone"></i> <b>ĐIỆN THOẠI:</b> +84964659721</li>
 							<li><i class="fas fa-map-marker-alt" style="font-size:15px"></i>&nbsp;<b>ĐỊA CHỈ:</b> 2A Trần Phú, Q. 5, TP. HCM</li>
 						</ul>
 					</div>
-					<div class="topbar-right col-lg-6">
+					<div class="topbar-right col-lg-6" style="float: right">
 						<p><i class="fas fa-user-circle" style="font-size:25px"></i><a href=#login>ĐĂNG NHẬP</a> <a href=#register style="margin: 0px 10px 10px;">ĐĂNG KÝ</a></p>
 					</div>
 				</div>
@@ -40,7 +45,7 @@
 			<div class="container">
 				<div class="row">
 					<div class ="col-lg-2">
-						<a href=#index><img src="image/Logo.png" alt="store_name" style="width:150px;"></a>
+						<a href=index.html><img src="image/Logo.png" alt="store_name" style="width:150px;"></a>
 					</div>
 					<div class="midheader-left col-lg-4">
 						<h3><i class="fas fa-shipping-fast" style="font-size:30px"></i>&nbsp;<b>vận chuyển tận nơi</b></h3>
@@ -61,15 +66,15 @@
 		<div class="menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-8" style="margin-left: -10px;">
 						<ul class="menu">
 							<li><a href="index.html">trang chủ</a></li>
 							<li><a href="sanpham.html">sản phẩm</a></li>
-							<li><a href="#news.html">tin tức</a></li>
+							<li><a href="tintuc.html">tin tức</a></li>
 							<li><a href="#contact.html">liên hệ</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4" style="float: right">
 						<ul class="search">
 							<li><button type="button" class="btn btn-default btn-xs"><a href=#search><img src="image/Search-512.png" style="width:20px;"></a></button></li>
 							<li><input type="text" class="search" placeholder="&nbsp;Tìm kiếm sản phẩm" title="Gõ từ khóa"></li>
@@ -83,71 +88,184 @@
 		<div class="body">
 			<div class="container">
 				<div class="row">
-					<div class="sidebar col-lg-3">
-						<p>Loại sản phẩm</p>
-						<button class="dropdown-btn"><img src="image/saxophone.png" title="invert" class="invert" style="width:50px; margin-left: -70px;">Saxophone<i class="fas fa-chevron-down"></i></button>
-						<div class="dropdown-container">
-							<a href="#alto saxophone">Alto Saxophone</a>
-							<a href="#tenor">Tenor Saxophone</a>
-							<a href="#soprano">Soprano Saxophone</a>
-						</div>
-						<button class="dropdown-btn"><img src="image/guitar.png" title="invert" class="invert" style="width:50px; margin-left: -115px;">Guitar<i class="fas fa-chevron-down"></i></button>
-						<div class="dropdown-container">
-							<a href="#acoustic guitar">Acoustic Guitar</a>
-							<a href="#electric guitar">Electric Guitar</a>
-							<a href="#bass guitar">Bass Guitar</a>
-						</div>
-						<button class="dropdown-btn"><img src="image/flute.png" title="invert" class="invert" style="width:50px; margin-left: -120px;">Flute<i class="fas fa-chevron-down"></i></button>
-						<div class="dropdown-container">
-							<a href="#alto flute">Alto Flute</a>
-							<a href="#bass flute">Bass Flute</a>
-							<a href="#piccolo flute">Piccolo Flute</a>
-						</div>
-						<button class="dropdown-btn"><img src="image/harmonica.png" title="invert" class="invert" style="width:50px; margin-left: -60px;">Harmonica<i class="fas fa-chevron-down"></i></button>
-						<div class="dropdown-container">
-							<a href="#diatonic">Diatonic</a>
-							<a href="#chromatic">Chromatic</a>
-							<a href="#tremolo">Tremolo</a>
-						</div>
-						<button class="dropdown-btn"><img src="image/violin.png" title="invert" class="invert" style="width:50px; margin-left: -110px;">Violin<i class="fas fa-chevron-down"></i></button>
-						<div class="dropdown-container">
-							<a href="#acoustic violin">Acoustic Violin</a>
-							<a href="#electric violin">Electric Violin</a>
-						</div>
-					</div>
-					<div class="slides col-lg-9">
-						<div class="owl-carousel owl-theme">
-							<img class="owl-lazy" data-src="image/1 Hall Crystal Flutes, Inc. Crystal Flute in G.jpg" alt="">
-							<img class="owl-lazy" data-src="image/Squier by Fender Vintage Modified Jazz Bass.jpg" alt="">
-							<img class="owl-lazy" data-src="image/vintage fender precision bass.jpg" alt="">
+					<div class="slides col-lg-12">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="image/Hall Crystal Flutes, Inc. Crystal Flute in G.jpg" alt="Los Angeles" style="width:100%;">
+								</div>
+								<div class="item">
+								<img src="image/Squier by Fender Vintage Modified Jazz Bass.jpg" alt="Chicago" style="width:100%;">
+								</div>
+								<div class="item">
+								<img src="image/vintage fender precision bass.jpg" alt="New york" style="width:100%;">
+								</div>
+							</div>
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
 					</div>
 					<div class="newpro_main col-lg-12">
 						<p>Sản phẩm mới</p>
 					</div>
 					<div class="newpro col-lg-12">
-						<a href=#stratocaster><img src="image/Stratocaster Limited Edition .png" style="width:300px;"></a>
-						<a href=#vox><img src="image/Vox harmonica.JPG" style="width:260px;"></a>
-						<a href=#fender><img src="image/harmonica san pham moi.jpg" style="width:320px;"></a>
+						<div class="owl-carousel owl-theme">
+							<div class="item" style="width:280px">
+								<img src="image/product/Suzuki S2 Diatonic Harmonica.jpg">
+								<a href="#ea" class="item">Suzuki S2 Diatonic Harmonica</a>
+								<p class="item">1.000.000đ</p>
+								<p class="item">
+									<span>
+										<button class="btn btn-primary">Đặt hàng</button>
+									</span>
+								</p>
+							</div>
+							<div class="item" style="width:280px">
+								<img src="image/product/Jupiter S1 Alto Flute.jpg">
+								<a href="#ea" class="item">Jupiter S1 Alto Flute</a>
+								<p class="item">1.200.000đ</p>
+								<p class="item">
+									<span>
+										<button class="btn btn-primary">Đặt hàng</button>
+									</span>
+								</p>
+							</div>
+							<div class="item" style="width:280px">
+								<img src="image/product/Yamaha G1 Tenor Saxophone.jpg">
+								<a href="#ea" class="item">Yamaha G1 Tenor Saxophone</a>
+								<p class="item">1.400.000đ</p>
+								<p class="item">
+									<span>
+										<button class="btn btn-primary">Đặt hàng</button>
+									</span>
+								</p>
+							</div>
+							<div class="item" style="width:280px">
+								<img src="image/product/Jupiter G1 Alto Saxophone.jpg">
+								<a href="#ea" class="item">Jupiter G1 Alto Saxophone</a>
+								<p class="item">1.300.000đ</p>
+								<p class="item">
+									<span>
+										<button class="btn btn-primary">Đặt hàng</button>
+									</span>
+								</p>
+							</div>
+							<div class="item" style="width:280px">
+								<img src="image/product/Hohner S1 Chromatic Harmonica.jpg">
+								<a href="#ea" class="item">Hohner S1 Chromatic Harmonica</a>
+								<p class="item">1.200.000đ</p>
+								<p class="item">
+									<span>
+										<button class="btn btn-primary">Đặt hàng</button>
+									</span>
+								</p>
+							</div>
+							<div class="item" style="width:280px">
+								<img src="image/product/Yamaha FL1 Electric Violin.jpg">
+								<a href="#ea" class="item">Yamaha FL1 Electric Violin</a>
+								<p class="item">2.500.000đ</p>
+								<p class="item">
+									<span>
+										<button class="btn btn-primary">Đặt hàng</button>
+									</span>
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="newpro col-lg-12">
-						<a class="text_new" href=#stratocaster>Stratocaster Limited Edition</a>
-						<a class="text_new" href=#stratocaster>Vox Harmonica</a>
-						<a class="text_new" href="#fender" style="padding-left: 110px;">Fender Blues Deluxe</a>
-					</div>
+					<script>
+						$(document).ready(function() {
+						$('.owl-carousel').owlCarousel({
+							dots: false,
+							nav: true,
+							margin: 10,
+							loop: true,
+							autoWidth: true,
+							items: 4
+						})
+						})
+					</script>
+					
 					<div class="best_main col-lg-12">
-						<p>Sản phẩm bán chạy</p>
-					</div>
-					<div class="best col-lg-12">
-						<a href=#clarke><img src="image/harmonica san pham ban chay.jpg" style="width:280px; margin-top: 20px;"></a>
-						<a href=#spur><img src="image/violin 1.JPG" style="width:260px;"></a>
-						<a href=#alto8101><img src="image/Alto 8101.jpg" style="width:320px;"></a>
-					</div>
-					<div class="best col-lg-12">
-						<a class="text_best" href=#clarke>Clarke Harmonica C</a>
-						<a class="text_best" href=#spur>Spur Electric Violin</a>
-						<a class="text_best" href="#alto8101" style="padding-left: 90px;">Alto 8101</a>
-					</div>
+							<p>Sản phẩm bán chạy</p>
+						</div>
+						<div class="newpro col-lg-12">
+							<div class="owl-carousel owl-theme">
+								<div class="item" style="width:280px">
+									<img src="image/product/Yamaha W1 Acoustic Violin.jpg">
+									<a href="#ea" class="item">Yamaha W1 Acoustic Violin</a>
+									<p class="item">2.800.000đ</p>
+									<p class="item">
+										<span>
+											<button class="btn btn-primary">Đặt hàng</button>
+										</span>
+									</p>
+								</div>
+								<div class="item" style="width:280px">
+									<img src="image/product/Pearl S1 Piccolo.jpg">
+									<a href="#ea" class="item">Pearl S1 Piccolo</a>
+									<p class="item">1.500.000đ</p>
+									<p class="item">
+										<span>
+											<button class="btn btn-primary">Đặt hàng</button>
+										</span>
+									</p>
+								</div>
+								<div class="item" style="width:280px">
+									<img src="image/product/Taylor W1 Bass Guitar.jpg">
+									<a href="#ea" class="item">Taylor W1 Bass Guitar</a>
+									<p class="item">3.000.000đ</p>
+									<p class="item">
+										<span>
+											<button class="btn btn-primary">Đặt hàng</button>
+										</span>
+									</p>
+								</div>
+								<div class="item" style="width:280px">
+									<img src="image/product/Hohner S1 Tremolo Harmonica.jpg">
+									<a href="#ea" class="item">Hohner S1 Tremolo Harmonica</a>
+									<p class="item">1.800.000đ</p>
+									<p class="item">
+										<span>
+											<button class="btn btn-primary">Đặt hàng</button>
+										</span>
+									</p>
+								</div>
+								<div class="item" style="width:280px">
+									<img src="image/product/Suzuki S1 Diatonic Harmonica.jpg">
+									<a href="#ea" class="item">Suzuki S1 Diatonic Harmonica</a>
+									<p class="item">1.500.000đ</p>
+									<p class="item">
+										<span>
+											<button class="btn btn-primary">Đặt hàng</button>
+										</span>
+									</p>
+								</div>
+								<div class="item" style="width:280px">
+									<img src="image/product/Gibson E1 Bass Guitar.jpg">
+									<a href="#ea" class="item">Gibson E1 Bass Guitar</a>
+									<p class="item">3.500.000đ</p>
+									<p class="item">
+										<span>
+											<button class="btn btn-primary">Đặt hàng</button>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -156,17 +274,29 @@
 		<div class="footer_main">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
+					<div class="col-lg-3">
 						<h3><b>Về chúng tôi</b></h3>
 						<a href=#gioithieu><p>Giới thiệu</p></a>
 						<a href=#sanpham><p>Sản phẩm</p></a>
 						<a href=#lienhe><p>Liên hệ</p></a>
 					</div>
-					<div class="col-lg-5" style="margin-left: -73px;">
+					<div class="col-lg-3" style="margin-left: -40px">
 						<h3><b>Kết nối với chúng tôi</b></h3>
 						<a href=#face><p><img class="invert1" src="image/facebook-icon.png" height="30" width="30">&nbsp;facebook.com/inst</p></a>
 						<a href=#twitter><p><img class="inverts" src="image/twitter-icon.png" height="30" width="30">&nbsp;twitter.com/inst</p></a>
 						<a href=#insta><p><img class="inverts" src="image/insta-icon.png" height="30" width="30">&nbsp;instagram.com/inst</p></a>
+					</div>
+					<div class="col-lg-3" style="margin-left: 40px">
+						<h3><b>Chính sách</b></h3>
+						<a href=#gioithieu><p>Điều khoản</p></a>
+						<a href=#sanpham><p>Bảo mật</p></a>
+						<a href=#lienhe><p>Hỗ trợ</p></a>
+					</div>
+					<div class="col-lg-3" style="margin-left: -25px">
+						<h3><b>Giờ hoạt động</b></h3>
+						<p>Trong tuần: 9h-20h</p>
+						<p>Thứ bảy: 9h-18h</p>
+						<p>Chủ nhật: 9h-15h</p>
 					</div>
 				</div>
 			</div>
@@ -174,57 +304,14 @@
 		<div class="footer_extra">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4" style="padding-left: 0;">
+					<div class="col-lg-12" style="text-align: center;">
 						<p style="color: #ffae00;font-family: 'Pattaya';font-size: 20px;">Inst</p>&nbsp;&nbsp;&nbsp;
 						<p>© 2019</p>
-					</div>
-					<div class="col-lg-4">
-							<img class="invert1" src="image/facebook-icon.png" height="30" width="30" style="margin-top: 7px;">&nbsp;
-							<img class="inverts" src="image/twitter-icon.png" height="30" width="30" style="margin-top: 4px;">&nbsp;
-							<img class="inverts" src="image/insta-icon.png" height="30" width="30" style="margin-top: 4px;">&nbsp;
-					</div>
-					<div class="col-lg-4" style="padding-left: 70px;">
-						<img class="invert1" src="image/call icon.png" height="30" width="30" style="margin-top: -5px;">&nbsp;&nbsp;&nbsp;
-						<p style="font-size: 18px;">ĐIỆN THOẠI: +84964659722</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<!-- javascript -->
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-	<script>
-		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-		var dropdown = document.getElementsByClassName("dropdown-btn");
-		var i;
-		
-		for (i = 0; i < dropdown.length; i++) {
-		  dropdown[i].addEventListener("click", function() {
-		  this.classList.toggle("active");
-		  var dropdownContent = this.nextElementSibling;
-		  if (dropdownContent.style.display === "block") {
-		  dropdownContent.style.display = "none";
-		  } else {
-		  dropdownContent.style.display = "block";
-		  }
-		  });
-		}
-	</script>
-	<script>
-			jQuery(document).ready(function($) {
-			  $('.owl-carousel').owlCarousel({
-				items: 1,
-				lazyLoad: true,
-				lazyLoadEager: 1,
-				loop: true,
-				margin: 10,
-				autoHeight: true,
-				dots: false,
-				nav: true
-			  });
-			});
-	</script>
+	
 </body>
 </html>
